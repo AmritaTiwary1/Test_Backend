@@ -1,0 +1,13 @@
+1 ... if we use import..... instead of require('express.....) , then -- we will get error --
+(node:11084) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.
+(Use `node --trace-warnings ...` to show where the warning was created)
+C:\Users\Aman\Desktop\01_Backend\02_frontend_backend\backend\server.js:1
+import express from 'express';
+
+solution ---
+ we have to add [ "type" : "module", ] in package.json
+
+2... sending array in res => res.send(arrayName) or res.json(arrayname) 
+if not beautify , use json formatter
+
+
