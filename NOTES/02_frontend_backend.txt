@@ -10,4 +10,15 @@ solution ---
 2... sending array in res => res.send(arrayName) or res.json(arrayname) 
 if not beautify , use json formatter
 
+3. bundlers / tool chain --- create react app/ vite 
 
+________________________________________________________-
+
+1. use proxy to get data from api -- used axios package for handling api
+2. created dist folder by running npm run build in 02_frontend_backend
+3. moving dist folder in backend folder & by using middleware , we can get frontend page by just running backend in terminal , if we delete frontend folder, then also ... website will run smoothly
+4. but, this is bad practice
+5. if we want to change frontend, we have to delete dist sub folder in backend folder then we have to go to frontend folder,then have to make changes, and again run -- npm run build, 
+the newly created folder -- dist , move it to the backend folder and restart the server  
+
+ 

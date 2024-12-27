@@ -1,17 +1,20 @@
-import express from 'express';
+import express from 'express'; 
 
 const app = express();
 
-app.get('/',(req,res)=>{
-    res.send('Hello World!!!!!')
-})
+  //because i have run - npm run build in frontend and then moved the new form folder- dist to the backend folder, so we have to use middleware & remove '/' route
+/*  app.get('/',(req,res)=>{
+  res.send('Hello World!!!!!')
+}) */
 
-app.get('/jokes',(req,res)=>{
+  app.use(express.static('dist'))  //we are serving frontend folder by just writing this line and putting the dist folder (created by running npm run build in fronted folder) in backend
+
+app.get('/api/jokes',(req,res)=>{
     const jokes = [
         {
             id:1,
             joke:'Why was the math book sad?',
-            punchline:'Because it had too many problems.',
+            punchline:'Because it had too many problems.', 
         }
         ,{
             id:2,
