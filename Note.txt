@@ -1,0 +1,52 @@
+HOW TO SETUP FOLDER WHERE WE CAN USE EXPRESS, MONGODB....ETC
+
+1. create a folder
+2. open integrated terminal / or cd foldername
+3. type >> npm init
+4. fill empty field   
+ ---- package name: (03_ecommerce_hospital_datamodel)
+version: (1.0.0)
+description: making todo , ecommerce, hospital data model 
+entry point: (index.js)
+test command:
+git repository:
+keywords:
+author: amrita tiwary
+license: (ISC)
+
+5. enter yes 
+6. Next , type >> npm i express mongoose ...etc
+7. create entry point file ie. index.js/script.js & start writing code in index.js
+
+****************************************************************************
+
+IN 02_frontend_backend FOLDER 
+
+1 ... if we use import..... instead of require('express.....) , then -- we will get error --
+(node:11084) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.
+(Use `node --trace-warnings ...` to show where the warning was created)
+C:\Users\Aman\Desktop\01_Backend\02_frontend_backend\backend\server.js:1
+import express from 'express';
+
+solution ---
+ we have to add [ "type" : "module", ] in package.json
+
+2... sending array in res => res.send(arrayName) or res.json(arrayname) 
+if not beautify , use json formatter
+
+3. bundlers / tool chain --- create react app/ vite   
+
+________________________________________________________-
+
+1. use proxy to get data from api -- used axios package for handling api
+2. created dist folder by running npm run build in 02_frontend_backend
+3. moving dist folder in backend folder & by using middleware , we can get frontend page by just running backend in terminal , if we delete frontend folder, then also ... website will run smoothly
+4. but, this is bad practice
+5. if we want to change frontend, we have to delete dist sub folder in backend folder then we have to go to frontend folder,then have to make changes, and again run -- npm run build, 
+the newly created folder -- dist , move it to the backend folder and restart the server  
+
+ ********************************************************************************
+
+ IN 03_ecommerce_hospital_datamodel --
+
+ 1. writing model file as filename.models.js , here,models is nothing but a way to write models filename, we can even remove it ie. order.js , product,js, patient.js....etc
