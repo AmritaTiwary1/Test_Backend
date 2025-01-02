@@ -1,0 +1,15 @@
+{
+  "name": "03_ecommerce_hospital_datamodel",
+  "version": "1.0.0",
+  "description": "making todo , ecommerce, hospital data model ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "amrita tiwary",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongoose": "^8.9.3"
+  }
+}
